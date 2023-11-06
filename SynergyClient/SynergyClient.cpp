@@ -15,6 +15,7 @@ int main()
 
   while(true)
   {
+    std::cout << "Enter message: " << std::endl;
     HelloPayload hp;
     std::cin >> hp.Message;
 

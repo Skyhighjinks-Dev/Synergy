@@ -21,7 +21,7 @@ void SynergyUDPServer::HandleReceive(const std::error_code& error, std::size_t b
     hp.Deserialize(receivedMessage);
     
 
-    std::cout << "Received message: " << hp.Message << std::endl;
+    std::cout << "Received message: " << hp.Message << " and type: " << hp.Type << std::endl;
   }
   else {
     std::cout << "Receive failed: " << error.message() << std::endl;

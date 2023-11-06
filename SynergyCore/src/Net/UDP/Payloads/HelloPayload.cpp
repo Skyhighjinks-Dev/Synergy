@@ -8,7 +8,8 @@ HelloPayload::HelloPayload() : PayloadBase(PayloadType::HELLO) {
 
 std::string HelloPayload::Serialize() const {
   json j;
-  j["Type"] = static_cast<int>(Type);
+  BaseSerialize(&j);
+
   j["Message"] = Message;
   
   return j.dump();
@@ -17,6 +18,6 @@ std::string HelloPayload::Serialize() const {
 void HelloPayload::Deserialize(const std::string& nJson)
 {
   json j = json::parse(nJson);
-  this->Type = static_cast<PayloadType>(j["Type"]);
+  BaseDeserialize(&j);
   this->Message = j["Message"];
 }

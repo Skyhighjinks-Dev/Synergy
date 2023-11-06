@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="src\Net\NetworkMessage.cpp" />
     <ClCompile Include="src\Net\UDP\Payloads\HelloPayload.cpp" />
+    <ClCompile Include="src\Net\UDP\Payloads\PayloadBase.cpp" />
     <ClCompile Include="src\Net\UDP\SynergyUDPClient.cpp" />
     <ClCompile Include="src\Net\UDP\SynergyUDPServer.cpp" />
   </ItemGroup>

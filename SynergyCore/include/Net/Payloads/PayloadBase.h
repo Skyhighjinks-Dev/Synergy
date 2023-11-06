@@ -5,6 +5,7 @@
 #include <Interfaces/Serializable.h>
 #include <SynergyCoreExports.h>
 #include "PayloadTypes.h"
+#include <json.hpp>
 
 class SYNERGYCORE_API PayloadBase : public Serializable {
 public: 
@@ -15,4 +16,8 @@ public:
   virtual void Deserialize(const std::string&) override = 0;
 
   PayloadType Type = PayloadType::NONE;
+
+protected:
+  void BaseSerialize(nlohmann::json*) const;
+  void BaseDeserialize(nlohmann::json*);
 };
