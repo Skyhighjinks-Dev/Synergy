@@ -1,5 +1,12 @@
 #include <Net/UDP/SynergyUDPClient.h>
 
+
+/// <summary>
+/// Constructor
+/// </summary>
+/// <param name="nContext">IO Context</param>
+/// <param name="nServerIP">Server IP address to connect to</param>
+/// <param name="nServerPort">Server port</param>
 SynergyUDPClient::SynergyUDPClient(asio::io_context& nContext, const std::string& nServerIP, int nServerPort)
   : Socket(nContext),
     ServerEndpoint(asio::ip::make_address(nServerIP), nServerPort)
@@ -7,6 +14,11 @@ SynergyUDPClient::SynergyUDPClient(asio::io_context& nContext, const std::string
   Socket.open(asio::ip::udp::v4());
 }
 
+
+/// <summary>
+/// Sends a message to the server
+/// </summary>
+/// <param name="nPayload">Payload pointer to send</param>
 void SynergyUDPClient::SendMsg(PayloadBase* nPayload)
 {
   std::string payloadJson = nPayload->Serialize();

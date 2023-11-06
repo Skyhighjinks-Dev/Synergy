@@ -6,6 +6,7 @@
 
 #include <iostream>
 
+/* Network message root object */
 class SYNERGYCORE_API NetworkMessage : public Serializable
 {
 public:

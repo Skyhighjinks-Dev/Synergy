@@ -7,6 +7,7 @@
 #include "PayloadTypes.h"
 #include <json.hpp>
 
+/* Payload base */
 class SYNERGYCORE_API PayloadBase : public Serializable {
 public: 
   PayloadBase(PayloadType nType)

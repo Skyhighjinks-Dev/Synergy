@@ -8,7 +8,7 @@ int main()
   try
   {
     asio::io_context context;
-    SynergyUDPServer server(context, 19810);
+    SynergyUDPServer server(context, SYNERGYCORE_PORT);
 
     server.StartListening();
     context.run();

@@ -5,3 +5,5 @@
 #else
 #define SYNERGYCORE_API __declspec(dllimport)
 #endif
+
+#define SYNERGYCORE_PORT 19810

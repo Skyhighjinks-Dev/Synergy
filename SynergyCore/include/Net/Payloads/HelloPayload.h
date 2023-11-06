@@ -3,6 +3,7 @@
 #include <SynergyCoreExports.h>
 #include "PayloadBase.h"
 
+/* Simple hello/handshake payload */
 class SYNERGYCORE_API HelloPayload : public PayloadBase {
 public:
   HelloPayload();

@@ -6,6 +6,7 @@
 #include <iostream>
 #include <asio.hpp>
 
+/* UDP Client */
 class SYNERGYCORE_API SynergyUDPClient {
 public:
   SynergyUDPClient(asio::io_context&, const std::string&, int);

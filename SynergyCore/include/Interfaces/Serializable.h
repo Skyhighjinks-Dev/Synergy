@@ -5,6 +5,8 @@
 #include <json.hpp>
 #include <string>
 
+/* Abstract class for serializable object */
+
 class SYNERGYCORE_API Serializable {
 public:
   virtual std::string Serialize() const = 0;
