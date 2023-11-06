@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
   {
     std::cout << "Enter message: " << std::endl;
     HelloPayload hp;
-    std::cin >> hp.Message;
+    std::getline(std::cin, hp.Message);
 
     context.run();
 
