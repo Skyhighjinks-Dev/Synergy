@@ -33,10 +33,20 @@ void SynergyUDPServer::HandleReceive(const std::error_code& nError, std::size_t 
   if (!nError) {
     std::string receivedMessage(ReceiveBuffer.data(), nBytesReceived);
     
-    HelloPayload hp;
-    hp.Deserialize(receivedMessage);
+    PayloadBase* hp;
+    hp->Deserialize(receivedMessage);
     
-    std::cout << "Received message: " << hp.Message << " and type: " << hp.Type << std::endl;
+    switch(hp->Type)
+    {
+      case PayloadType::HELLO:
+        break;
+      case PayloadType::AUDIO_CONNECT:
+        break;
+      case PayloadType::AUDIO:
+        break;
+      case PayloadType::MESSAGE:
+        break;
+    }
   }
   else {
     std::cout << "Receive failed: " << nError.message() << std::endl;

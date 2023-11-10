@@ -19,9 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="include\Net\UDP\SynergyConnectedUDPClient.h" />
     <ClCompile Include="src\Net\NetworkMessage.cpp" />
-    <ClCompile Include="src\Net\UDP\Payloads\HelloPayload.cpp" />
-    <ClCompile Include="src\Net\UDP\Payloads\PayloadBase.cpp" />
+    <ClCompile Include="src\Net\Payloads\HelloPayload.cpp" />
+    <ClCompile Include="src\Net\Payloads\PayloadBase.cpp" />
     <ClCompile Include="src\Net\UDP\SynergyUDPClient.cpp" />
     <ClCompile Include="src\Net\UDP\SynergyUDPServer.cpp" />
   </ItemGroup>

@@ -24,10 +24,13 @@
     <ClCompile Include="src\Net\UDP\SynergyUDPServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Net\UDP\Payloads\HelloPayload.cpp">
+    <ClCompile Include="src\Net\Payloads\HelloPayload.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Net\UDP\Payloads\PayloadBase.cpp">
+    <ClCompile Include="src\Net\Payloads\PayloadBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Net\UDP\SynergyConnectedUDPClient.h">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
