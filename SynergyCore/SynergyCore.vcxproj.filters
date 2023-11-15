@@ -15,27 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Net\NetworkMessage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Net\UDP\SynergyUDPClient.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Net\UDP\SynergyUDPServer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Net\UDP\Payloads\HelloPayload.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Net\UDP\Payloads\PayloadBase.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="include\SynergyCoreExports.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Net\NetworkMessage.h">
+    <ClInclude Include="include\Interfaces\Serializable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Net\TCP\SynergyTCPServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Net\TCP\SynergyTCPClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Net\UDP\SynergyUDPClient.h">
@@ -44,16 +33,19 @@
     <ClInclude Include="include\Net\UDP\SynergyUDPServer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Interfaces\Serializable.h">
+    <ClInclude Include="include\Net\Managers\SynergyUDPManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Net\Payloads\PayloadBase.h">
+    <ClInclude Include="include\Net\Managers\SynergyClientManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Net\Payloads\HelloPayload.h">
+    <ClInclude Include="include\Interfaces\Net\Server.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Net\Payloads\PayloadTypes.h">
+    <ClInclude Include="include\Interfaces\Net\Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Interfaces\Net\NetworkBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
