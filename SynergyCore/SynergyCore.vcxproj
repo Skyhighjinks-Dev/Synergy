@@ -25,11 +25,22 @@
     <ClInclude Include="include\Interfaces\Serializable.h" />
     <ClInclude Include="include\Net\Managers\SynergyClientManager.h" />
     <ClInclude Include="include\Net\Managers\SynergyUDPManager.h" />
+    <ClInclude Include="include\Net\Payloads\ConnectPayload.h" />
+    <ClInclude Include="include\Net\Payloads\PayloadBase.h" />
+    <ClInclude Include="include\Net\Payloads\PayloadType.h" />
     <ClInclude Include="include\Net\TCP\SynergyTCPClient.h" />
     <ClInclude Include="include\Net\TCP\SynergyTCPServer.h" />
     <ClInclude Include="include\Net\UDP\SynergyUDPClient.h" />
     <ClInclude Include="include\Net\UDP\SynergyUDPServer.h" />
     <ClInclude Include="include\SynergyCoreExports.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Net\Payloads\ConnectPayload.cpp" />
+    <ClCompile Include="src\Net\Payloads\PayloadBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SynergyCore.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -140,6 +151,8 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <Version>
+      </Version>
     </Link>
     <PostBuildEvent>
       <Command>$(ProjectDir)post_build.bat $(SolutionDir)bin\$(Configuration)\SynergyCore\ $(SolutionDir)bin\$(Configuration)\SynergyClient $(SolutionDir)bin\$(Configuration)\SynergyServer</Command>
@@ -164,6 +177,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <Version>
+      </Version>
     </Link>
     <PostBuildEvent>
       <Command>$(ProjectDir)post_build.bat $(SolutionDir)bin\$(Configuration)\SynergyCore\ $(SolutionDir)bin\$(Configuration)\SynergyClient $(SolutionDir)bin\$(Configuration)\SynergyServer</Command>

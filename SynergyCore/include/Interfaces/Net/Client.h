@@ -2,6 +2,7 @@
 
 #include <SynergyCoreExports.h>
 #include "NetworkBase.h"
+#include <Net/Payloads/PayloadBase.h>
 
 class SYNERGYCORE_API Client : public NetworkBase {
 public:
@@ -9,5 +10,5 @@ public:
     : NetworkBase(nContext, nPort) { }
   
   virtual void Start() override = 0;
-  virtual void SendMsg() = 0; // Add payload
+  virtual void SendMsg(PayloadBase*) = 0; // Add payload
 };

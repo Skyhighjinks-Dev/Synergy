@@ -16,7 +16,7 @@ public:
       Endpoint(asio::ip::tcp::endpoint(asio::ip::make_address(nIPAddress), Port)) { }
 
   void Start() override;
-  void SendMsg() override;
+  void SendMsg(PayloadBase*) override;
 
 private:
   asio::ip::tcp::socket Socket;
