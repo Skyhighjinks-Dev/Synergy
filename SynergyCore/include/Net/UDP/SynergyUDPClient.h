@@ -12,8 +12,8 @@ public:
 
   SynergyUDPClient(asio::io_context& nContext, const std::string& nIPAddress)
     : Client(nContext, SYNERGYCORE_UDP_PORT),
-    Socket(Context),
-    Endpoint(asio::ip::make_address(nIPAddress), Port) { }
+      Socket(Context),
+      Endpoint(asio::ip::make_address(nIPAddress), Port) { }
 
   void Start() override;
   void SendMsg() override;
