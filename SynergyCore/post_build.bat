@@ -13,6 +13,4 @@ echo %1SynergyCore.lib
 
 copy "%1SynergyCore.dll" "%2"
 copy "%1SynergyCore.lib" "%2"
-copy "%1SynergyCore.dll" "%3"
-copy "%1SynergyCore.lib" "%3"
 ) >> %logFile%

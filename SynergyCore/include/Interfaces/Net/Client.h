@@ -11,4 +11,5 @@ public:
   
   virtual void Start() override = 0;
   virtual void SendMsg(PayloadBase*) = 0; // Add payload
+  virtual void SendMsgAsync(PayloadBase*) = 0;
 };

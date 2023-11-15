@@ -38,6 +38,8 @@
   <ItemGroup>
     <ClCompile Include="src\Net\Payloads\ConnectPayload.cpp" />
     <ClCompile Include="src\Net\Payloads\PayloadBase.cpp" />
+    <ClCompile Include="src\Net\TCP\SynergyTCPClient.cpp" />
+    <ClCompile Include="src\Net\TCP\SynergyTCPServer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SynergyCore.rc" />
@@ -155,7 +157,8 @@
       </Version>
     </Link>
     <PostBuildEvent>
-      <Command>$(ProjectDir)post_build.bat $(SolutionDir)bin\$(Configuration)\SynergyCore\ $(SolutionDir)bin\$(Configuration)\SynergyClient $(SolutionDir)bin\$(Configuration)\SynergyServer</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -181,7 +184,8 @@
       </Version>
     </Link>
     <PostBuildEvent>
-      <Command>$(ProjectDir)post_build.bat $(SolutionDir)bin\$(Configuration)\SynergyCore\ $(SolutionDir)bin\$(Configuration)\SynergyClient $(SolutionDir)bin\$(Configuration)\SynergyServer</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

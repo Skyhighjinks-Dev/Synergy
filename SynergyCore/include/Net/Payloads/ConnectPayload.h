@@ -5,10 +5,10 @@
 
 #define JSON_MESSAGE_KEY "Message"
 
-class ConnectPayload : public PayloadBase {
+class SYNERGYCORE_API ConnectPayload : public PayloadBase {
 public:
   ConnectPayload() 
-    : PayloadBase(PayloadType::HELLO) {}
+    : PayloadBase(PayloadType::HELLO){}
 
   std::string Serialize() const override;
   void Deserialize(const std::string&) override;
