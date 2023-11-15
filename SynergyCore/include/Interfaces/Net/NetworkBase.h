@@ -10,15 +10,6 @@ public:
       Port(nPort) { }
 
   virtual void Start() = 0;
-  
-  asio::io_context& GetContext() {
-    return Context;
-  }
-
-  const int GetPort() {
-    return Port;
-  }
-
 
 protected:
   const int Port;
